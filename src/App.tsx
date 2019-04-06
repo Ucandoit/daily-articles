@@ -4,7 +4,7 @@ import Nav from './components/Nav';
 import Home from './components/Home';
 import About from './components/About';
 
-const App: React.FunctionComponent = () => {
+const App: React.FunctionComponent = (): JSX.Element => {
   return (
     <BrowserRouter>
       <Nav />

@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --config ./config/webpack.dev.config.js",
-    "build": "webpack --config ./config/webpack.prod.config.js"
+    "build": "webpack --config ./config/webpack.prod.config.js",
+    "lint": "eslint '{src, test}/**/*.ts'; eslint '{src, test}/**/*.tsx'"
   },
   "repository": {
     "type": "git",
@@ -27,9 +28,13 @@
     "@types/react": "^16.8.12",
     "@types/react-dom": "^16.8.3",
     "@types/react-router-dom": "^4.3.1",
+    "@typescript-eslint/eslint-plugin": "^1.6.0",
+    "@typescript-eslint/parser": "^1.6.0",
     "awesome-typescript-loader": "^5.2.1",
     "clean-webpack-plugin": "^2.0.1",
     "css-loader": "^2.1.1",
+    "eslint": "^5.16.0",
+    "eslint-plugin-react": "^7.12.4",
     "html-webpack-plugin": "^3.2.0",
     "style-loader": "^0.23.1",
     "typescript": "^3.4.2",
