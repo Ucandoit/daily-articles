@@ -14,6 +14,6 @@ const App: React.FunctionComponent = (): JSX.Element => {
       </Switch>
     </BrowserRouter>
   );
-}
+};
 
 export default App;
