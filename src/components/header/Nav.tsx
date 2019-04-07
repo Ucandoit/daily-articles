@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { Link } from 'react-router-dom';
+import { RouteEnum } from '../../constants';
 
 export default class Nav extends React.PureComponent {
   public render(): JSX.Element {
@@ -7,10 +8,10 @@ export default class Nav extends React.PureComponent {
       <div>
         <ul>
           <li>
-            <Link to="/">Dashboard</Link>
+            <Link to={RouteEnum.DASHBOARD}>Dashboard</Link>
           </li>
           <li>
-            <Link to="/articles">Articles</Link>
+            <Link to={RouteEnum.ARTICLES}>Articles</Link>
           </li>
         </ul>
       </div>
