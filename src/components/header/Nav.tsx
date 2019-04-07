@@ -7,10 +7,10 @@ export default class Nav extends React.PureComponent {
       <div>
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/">Dashboard</Link>
           </li>
           <li>
-            <Link to="/about">About</Link>
+            <Link to="/articles">Articles</Link>
           </li>
         </ul>
       </div>
