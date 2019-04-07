@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const LoginBox = styled.div`
+export const SignForm = styled.form`
   width: 400px;
   margin: 60px auto 0;
   padding: 30px;
@@ -17,7 +17,7 @@ export const Input = styled.input`
   margin-bottom: 20px;
 `;
 
-export const LoginButton = styled.div`
+export const SignButton = styled.button`
   width: 100%;
   height: 40px;
   line-height: 30px;

@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Nav from './header';
 import Dashboard from './dashboard';
 import Articles from './article';
-import { PrivateRoute, Login } from './auth';
+import { PrivateRoute, SignIn, SignUp } from './auth';
 import { RouteEnum } from '../constants';
 import { GlobalStyle } from './style';
 
@@ -12,7 +12,8 @@ const App: React.FunctionComponent = (): JSX.Element => {
     <BrowserRouter>
       <Nav />
       <Switch>
-        <Route path={RouteEnum.LOGIN} component={Login} />
+        <Route path={RouteEnum.SIGN_IN} component={SignIn} />
+        <Route path={RouteEnum.SIGN_UP} component={SignUp} />
         <PrivateRoute path={RouteEnum.DASHBOARD} exact component={Dashboard} />
         <PrivateRoute path={RouteEnum.ARTICLES} component={Articles} />
       </Switch>

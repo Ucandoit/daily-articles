@@ -1,5 +1,6 @@
 export enum RouteEnum {
   DASHBOARD = '/',
-  LOGIN = '/login',
+  SIGN_UP = '/sign-up',
+  SIGN_IN = '/sign-in',
   ARTICLES = '/articles'
 }
