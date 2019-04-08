@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Nav from './header';
 import Dashboard from './dashboard';
 import Articles from './article';
-import { PrivateRoute, SignIn, SignUp } from './auth';
+import { SignIn, SignUp, withAuthentication } from './auth';
 import { RouteEnum } from '../constants';
 import { GlobalStyle } from './style';
 
@@ -14,12 +14,12 @@ const App: React.FunctionComponent = (): JSX.Element => {
       <Switch>
         <Route path={RouteEnum.SIGN_IN} component={SignIn} />
         <Route path={RouteEnum.SIGN_UP} component={SignUp} />
-        <PrivateRoute path={RouteEnum.DASHBOARD} exact component={Dashboard} />
-        <PrivateRoute path={RouteEnum.ARTICLES} component={Articles} />
+        <Route path={RouteEnum.DASHBOARD} exact component={Dashboard} />
+        <Route path={RouteEnum.ARTICLES} component={Articles} />
       </Switch>
       <GlobalStyle />
     </BrowserRouter>
   );
 };
 
-export default App;
+export default withAuthentication(App);

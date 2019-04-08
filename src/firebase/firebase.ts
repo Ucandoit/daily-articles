@@ -11,7 +11,7 @@ const config = {
 };
 
 class Firebase {
-  private auth: firebase.auth.Auth;
+  public auth: firebase.auth.Auth;
 
   public constructor() {
     firebase.initializeApp(config);
