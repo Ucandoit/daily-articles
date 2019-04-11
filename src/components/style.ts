@@ -1,11 +1,12 @@
 import styled from 'styled-components';
-import { createMuiTheme } from '@material-ui/core/styles';
+import { createStyles, Theme } from '@material-ui/core/styles';
+import { CSSProperties } from '@material-ui/core/styles/withStyles';
+import theme from './theme';
 
-export const theme = createMuiTheme({
-  typography: {
-    useNextVariants: true
-  }
-});
+export const styles = (theme: Theme): Record<'appBarSpacer', CSSProperties> =>
+  createStyles({
+    appBarSpacer: theme.mixins.toolbar
+  });
 
 export const Root = styled.div`
   display: flex;

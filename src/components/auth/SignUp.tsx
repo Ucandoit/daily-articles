@@ -1,9 +1,10 @@
 import * as React from 'react';
 import { RouteComponentProps } from 'react-router';
 import { withRouter } from 'react-router-dom';
-import { Input, SignButton, SignForm } from './style';
+import { SignButton, SignForm } from './style';
 import { FirebaseContext } from '../../firebase';
 import { RouteEnum } from '../../constants';
+import Input from '@material-ui/core/Input';
 
 const SignUp: React.FunctionComponent<RouteComponentProps> = (props): JSX.Element => {
   const [username, setUserName] = React.useState<string>('');

@@ -2,7 +2,7 @@ import * as React from 'react';
 import AuthUserContext from './AuthUserContext';
 import { FirebaseContext } from '../../firebase';
 
-const withAuthentication = (Component: React.FunctionComponent): React.FunctionComponent => {
+const withAuthentication = (Component: any): React.FunctionComponent => {
   const WithAuthentication = (props): JSX.Element => {
     const [authUser, setAuthUser] = React.useState<firebase.User>();
     const firebaseContext = React.useContext(FirebaseContext);
