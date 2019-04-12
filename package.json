@@ -7,8 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --config ./config/webpack.dev.config.js",
     "build": "webpack --config ./config/webpack.prod.config.js",
-    "prettier": "prettier --write '{src, test}/**/*.ts'; prettier --write '{src,test}/**/*.tsx'",
-    "lint": "npm run prettier && eslint '{src, test}/**/*.ts'; eslint '{src, test}/**/*.tsx'"
+    "prettier": "prettier --write \"{src, test}/**/*.ts\" && prettier --write \"{src,test}/**/*.tsx\"",
+    "lint": "npm run prettier && eslint \"{src, test}/**/*.ts\" && eslint \"{src, test}/**/*.tsx\""
   },
   "repository": {
     "type": "git",
